@@ -17,4 +17,4 @@
 # sigh.
 # Another solution would be to use tr like so
 # head -n 2 primer_B.fasta | tail -n 1 | tr -d '\n' | wc -m
-expr $(head -n 2 primer_B.fasta | tail -n 1 | wc -m) -1
+expr $(head -n 2 "$@" | tail -n 1 | wc -m) - 1
